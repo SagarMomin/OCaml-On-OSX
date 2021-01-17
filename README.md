@@ -6,33 +6,39 @@ Remap keys
 * Caps -> Control  
 
 # Apps to make the experience better
-Must have
+Must have (don't use terminal. iTerm2 is significantly better)
 * Brew: https://brew.sh/
 * iTerm2: https://iterm2.com/
 
-Recommended, but work to reconfigure
+Recommended, but work to setup/configure
 * Alfred: https://www.alfredapp.com/
 * Divvy: https://mizage.com/divvy/ (Actually there probably is a better way to do this now?)
 
 # Install OCaml stuff:
 https://dev.realworldocaml.org/install.html
 
-# RWO install [Tested on Debian 10 (Buster)]
+# RWO install [Tested on Big Sur)]
 ~~~~
-$ sudo apt-get install curl build-essential m4 zlib1g-dev libssl-dev ocaml ocaml-native-compilers opam
+$ brew update
+$ brew upgrade
+$ brew cleanup
+$ brew install gpatch 
+$ brew install opam
+$ brew install libx11 # Dependency for async_graphics
 $ opam init
-$ opam switch create 4.10.0
-$ opam switch # This shows compiler versions
-$ opam switch 4.10.0
-$ opam install core utop
+$ opam switch # This shows compiler versions, check for something 4.10.0 or higher
+$ # Uncomment the next two commands if you don't see >4.11.1 as the default version
+$ # opam switch create 4.11.1
+$ # opam switch 4.11.1
+$ opam install core utop async yojson ppx_deriving_yojson core_extended core_bench menhir
 $ opam depext conf-pkg-config.1.3
 $ opam depext conf-gmp.3
 $ opam depext conf-libpcre.1
-$ opam install async yojson core_extended core_bench cohttp async_graphics cryptokit menhir
+$ opam install cohttp async_graphics cryptokit 
 # done with realworld install
 ~~~~
 
-# sagarmomin install some tools
+# Sagar says install some tools
 ~~~~
 $ opam install patdiff sexp ocamlformat 
 ~~~~
@@ -49,11 +55,12 @@ In external I put all my opam pin’d libraries
 # Generally useful Linux stuff and other tools
 ~~~~
 $ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq man net-tools nmap python3 ripgrep strace x11-apps xclip xorg
+fzf		gettext		libevent	libpcap		libyaml		ncurses		p7zip		ripgrep		sqlite		tcpdump		wget
+pcre2			readline tmux		vim		xz
 ~~~~
 
-# Install VIM that has python support. I prefer vim-nox
+# Install VIM config
 ~~~~
-$ sudo apt-get install vim-nox
 # Copy over my vim-config 
 $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
