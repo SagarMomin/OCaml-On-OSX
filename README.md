@@ -9,6 +9,7 @@ Remap keys
 Must have
 * Brew: https://brew.sh/
 * iTerm2: https://iterm2.com/
+
 Recommended, but work to reconfigure
 * Alfred: https://www.alfredapp.com/
 * Divvy: https://mizage.com/divvy/ (Actually there probably is a better way to do this now?)
