@@ -54,7 +54,7 @@ In external I put all my opam pin’d libraries
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
+$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz merlin ocp-indent
 ~~~~
 
 # Install VIM config
@@ -70,13 +70,6 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 $ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 # Update inputrc to point to the one in system config
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
-~~~~
-
-# Making OCaml + vim = :D
-~~~~
-$ opam install merlin ocp-indent
-$ opam install user-setup # Not strictly necessary
-$ opam init
 ~~~~
 
 # Make sure Core is available in utop
