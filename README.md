@@ -54,9 +54,7 @@ In external I put all my opam pin’d libraries
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ sudo apt-get install curl fdisk fzf grep gzip inetutils-ping inotify-tools jq man net-tools nmap python3 ripgrep strace x11-apps xclip xorg
-fzf		gettext		libevent	libpcap		libyaml		ncurses		p7zip		ripgrep		sqlite		tcpdump		wget
-pcre2			readline tmux		vim		xz
+$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
 ~~~~
 
 # Install VIM config
