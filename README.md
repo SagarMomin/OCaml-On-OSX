@@ -14,6 +14,16 @@ Recommended, but work to setup/configure
 * Alfred: https://www.alfredapp.com/
 * Divvy: https://mizage.com/divvy/ (Actually there probably is a better way to do this now?)
 
+# Delete existing OPAM and Vim configs
+~~~~
+$ brew update
+$ brew upgrade
+$ brew uninstall opam
+$ brew cleanup
+$ rm -rf ~/.opam
+$ rm -rf ~/.vim 
+~~~~
+
 # Install OCaml stuff:
 https://dev.realworldocaml.org/install.html
 
@@ -25,7 +35,7 @@ $ brew cleanup
 $ brew install gpatch 
 $ brew install opam
 $ brew install libx11 # Dependency for async_graphics
-$ opam init
+$ opam init # say yes to the part where you add to your bash_profile
 $ opam switch # This shows compiler versions, check for something 4.10.0 or higher
 # Uncomment the next two commands if you don't see >4.11.1 as the default version
 $ # opam switch create 4.11.1
@@ -57,6 +67,14 @@ In external I put all my opam pin’d libraries
 $ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
 ~~~~
 
+# If you decide to install the VIM tooling, you need to use bash on OSX.
+~~~~
+$ brew install bash
+$ sudo bash -c 'if [[ $(grep -F /usr/local/bin/bash /etc/shells >& /dev/null; echo $?) -ne 0 ]]; then echo /usr/local/b
+in/bash >> /etc/shells; fi'
+$ sudo chsh -s /usr/local/bin/bash
+~~~~
+
 # Install VIM config
 ~~~~
 # Copy over my vim-config 
@@ -71,6 +89,16 @@ $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 $ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 # Update inputrc to point to the one in system config
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
+~~~~
+
+# Make bashrc load on terminal start
+~~~~
+$ cat << EOM >> ~/.bash_profile
+source ~/.bashrc
+
+# opam configuration
+test -r ~/.opam/opam-init/init.sh && . ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+EOM
 ~~~~
 
 # Make sure Core is available in utop
