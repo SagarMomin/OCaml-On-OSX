@@ -36,7 +36,7 @@ $ brew install gpatch
 $ brew install opam
 $ brew install libx11 # Dependency for async_graphics
 $ opam init # say yes to the part where you add to your bash_profile
-$ opam switch # This shows compiler versions, id default is 4.10.0 or higher, skip to opam install core utop ...
+$ opam switch # This shows compiler versions, if default is 4.10.0 or higher, skip to opam install core utop ...
 # Uncomment the next two commands if you don't see >4.11.1 as the default version
 $ # opam switch create 4.11.1
 $ # opam switch 4.11.1
