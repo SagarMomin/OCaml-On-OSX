@@ -54,15 +54,6 @@ $ opam install cohttp async_graphics cryptokit
 $ opam install patdiff sexp ocamlformat merlin ocp-indent
 ~~~~
 
-# Housekeeping
-Ocaml Code directory structure I  like to put stuff in  
-* workspaces
-  * app
-  * lib
-  * external
-  
-In external I put all my opam pin’d libraries  
-
 # Generally useful Linux stuff and other tools
 ~~~~
 $ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
