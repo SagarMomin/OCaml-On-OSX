@@ -134,20 +134,20 @@ $ ,,t
 
 # Write OCaml with Vim
 Some useful commands
-* [,,t] -> Merlin type
-* [,,y] -> Yank(copy) output of [,,t]/Merlin type
-* [,,d] -> Show documentation for a function
-* [,,s] -> Jump to source
-* [,,i] -> Jump to interface
-* [,a] -> Toggle between ml/mli/intf
-* [,,j] -> Show all instances of a function used, in a file
-* [,,<SPC>] -> Fzf all available keybindings
-* [,<SPC>] -> Fzf all available Vim commands/functions
-* [,c] -> Copy line, or visual lines into your OSX clipboard
-* [,o] -> Ocamlformat file (should happen automatically on save)
-* [,w] -> If you have two buffers open, diff them
-* [,,w] -> disable buffer diff
-* [,,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]. [,,l] when done inspecting diff to reset
+* ``[,,t] -> Merlin type``
+* ``[,,y] -> Yank(copy) output of [,,t]/Merlin type``
+* ``[,,d] -> Show documentation for a function``
+* ``[,,s] -> Jump to source``
+* ``[,,i] -> Jump to interface``
+* ``[,a] -> Toggle between ml/mli/intf``
+* ``[,,j] -> Show all instances of a function used, in a file``
+* ``[,,<SPC>] -> Fzf all available keybindings``
+* ``[,<SPC>] -> Fzf all available Vim commands/functions``
+* ``[,c] -> Copy line, or visual lines into your OSX clipboard``
+* ``[,o] -> Ocamlformat file (should happen automatically on save)``
+* ``[,w] -> If you have two buffers open, diff them``
+* ``[,,w] -> disable buffer diff``
+* ``[,,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]. [,,l] when done inspecting diff to reset``
   
 # Git stuff
 in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH keys)
