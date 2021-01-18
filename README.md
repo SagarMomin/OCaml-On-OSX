@@ -60,6 +60,8 @@ $ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmu
 # Install VIM config
 ~~~~
 # Copy over my vim-config 
+$ wget https://drive.google.com/file/d/1652DEDtmeaWcGTbCac0JjsD6adV5gCHN/view
+$ # Or if you're Sagar, glone the repo to keep it in sync
 $ git clone https://github.com/SagarMomin/vim-config.git ~/.vim
 ~~~~
 
