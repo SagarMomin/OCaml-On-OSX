@@ -40,7 +40,7 @@ $ opam install cohttp async_graphics cryptokit
 
 # Sagar says install some tools
 ~~~~
-$ opam install patdiff sexp ocamlformat 
+$ opam install patdiff sexp ocamlformat merlin ocp-indent
 ~~~~
 
 # Housekeeping
@@ -54,7 +54,7 @@ In external I put all my opam pin’d libraries
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz merlin ocp-indent
+$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
 ~~~~
 
 # Install VIM config
