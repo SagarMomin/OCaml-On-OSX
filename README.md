@@ -14,7 +14,7 @@ Recommended, but work to setup/configure
 * Alfred: https://www.alfredapp.com/
 * Divvy: https://mizage.com/divvy/ (Actually there probably is a better way to do this now?)
 
-# Delete existing OPAM and Vim configs
+# Delete existing OPAM and Vim configs. Open up iTerm and let's get started.
 ~~~~
 $ brew update
 $ brew upgrade
@@ -114,6 +114,41 @@ $ bash ~/.vim/bin/install.sh
 # $ :PlugInstall # in vim
 ~~~~
 
+# Testing! You did all this work, let's see if it works!
+~~~~
+# Let's start fresh, and open a new iTerm, terminal.
+$ cdf # This takes you to the workspaces directory, for ocaml coding
+$ cd app
+$ git clone https://github.com/SagarMomin/hacker-rank-ocaml.git
+$ cd hacker-rank-ocaml
+$ tmux new -s testing-ocaml
+$ cw # alias for compile-workspaces
+# At this point dune should be building in the bottom right
+$ vim arrays/bribes.ml
+# You should now be able to navigate around. Try jumping to line 37
+$ :37
+# and putting your cursor over "map" in List.map, and see if merlin gives you type information [,,t]
+$ ,,t
+# You should see ['a list -> f:('a -> 'b) -> 'b list] at the bottom of the screen
+~~~~
+
+# Write OCaml with Vim
+Some useful commands
+* [,,t] -> Merlin type
+* [,,y] -> Yank(copy) output of [,,t]/Merlin type
+* [,,d] -> Show documentation for a function
+* [,,s] -> Jump to source
+* [,,i] -> Jump to interface
+* [,a] -> Toggle between ml/mli/intf
+* [,,j] -> Show all instances of a function used, in a file
+* [,,<SPC>] -> Fzf all available keybindings
+* [,<SPC>] -> Fzf all available Vim commands/functions
+* [,c] -> Copy line, or visual lines into your OSX clipboard
+* [,o] -> Ocamlformat file (should happen automatically on save)
+* [,w] -> If you have two buffers open, diff them
+* [,,w] -> disable buffer diff
+* [,,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]. [,,l] when done inspecting diff to reset
+  
 # Git stuff
 in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH keys)
 
