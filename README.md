@@ -59,9 +59,9 @@ $ opam install patdiff sexp ocamlformat merlin ocp-indent
 $ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
 ~~~~
 
-# If you decide to install the VIM tooling, you need to use bash on OSX.
+# If you decide to install the VIM tooling, you need to use the brew bash, and Vim instead of the builtin ones.
 ~~~~
-$ brew install bash
+$ brew install bash vim
 $ sudo bash -c 'if [[ $(grep -F /usr/local/bin/bash /etc/shells >& /dev/null; echo $?) -ne 0 ]]; then echo /usr/local/b
 in/bash >> /etc/shells; fi'
 $ chsh -s /usr/local/bin/bash
