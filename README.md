@@ -93,6 +93,7 @@ $ bash ~/.vim/bin/install.sh
 
 # Git stuff
 in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH keys)
+
 ** NOTE - you can find the correct bin with [echo $(opam config var bin)/patdiff-git-wrapper]
 ~~~~
 ---------------------------------------------------------------------------------------
