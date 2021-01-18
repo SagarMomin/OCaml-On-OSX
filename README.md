@@ -22,6 +22,7 @@ $ brew uninstall opam
 $ brew cleanup
 $ rm -rf ~/.opam
 $ rm -rf ~/.vim 
+# Done with clean up. I'd recommend opening a new terminal
 ~~~~
 
 # Install OCaml stuff:
@@ -73,6 +74,7 @@ $ brew install bash
 $ sudo bash -c 'if [[ $(grep -F /usr/local/bin/bash /etc/shells >& /dev/null; echo $?) -ne 0 ]]; then echo /usr/local/b
 in/bash >> /etc/shells; fi'
 $ chsh -s /usr/local/bin/bash
+# Done with switching to bash. I'd recommend opening a new terminal
 ~~~~
 
 # Install VIM config
@@ -92,7 +94,7 @@ $ cd ~/.vim/system-configs/ && bash smash-all-my-configs.sh && cd -
 $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
 ~~~~
 
-# Make bashrc load on terminal start
+# Make bashrc and oapm loads on terminal start
 ~~~~
 $ cat << EOM > ~/.bash_profile
 source ~/.bashrc
@@ -130,10 +132,10 @@ in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH key
 [credential]
   helper = store
 [diff]
-  external = /home/sagarmomin/.opam/4.10.0/bin/patdiff-git-wrapper
+  external = ~/.opam/default/bin/patdiff-git-wrapper
 [user]
   email = {EMAIL}
-  name = Sagar
+  name = {NAME}
 ---------------------------------------------------------------------------------------
 ~~~~
 
