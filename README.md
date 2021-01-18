@@ -150,9 +150,9 @@ Some useful commands
 * ``[,,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]. [,,l] when done inspecting diff to reset``
   
 # Git stuff
-in ~.gitconfig: (If you do this, don't use user/password. Use a token or SSH keys)
+in ``[~.gitconfig]``: (If you do this, don't use user/password. Use a token or SSH keys)
 
-** NOTE - you can find the correct bin with [echo $(opam config var bin)/patdiff-git-wrapper]
+** NOTE - you can find the correct bin with ``[echo $(opam config var bin)/patdiff-git-wrapper]``
 ~~~~
 ---------------------------------------------------------------------------------------
 [credential]
