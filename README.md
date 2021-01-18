@@ -147,7 +147,8 @@ Some useful commands
 * ``[,o] -> Ocamlformat file (should happen automatically on save)``
 * ``[,w] -> If you have two buffers open, diff them``
 * ``[,,w] -> disable buffer diff``
-* ``[,,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]. [,,l] when done inspecting diff to reset``
+* ``[,l] -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]``
+* ``[,,l] -> Reset line diff. You can use it when done inspecting diff, or after the first [,l] if you change your mind``
   
 # Git stuff
 in ``[~.gitconfig]``: (If you do this, don't use user/password. Use a token or SSH keys)
