@@ -72,7 +72,7 @@ $ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmu
 $ brew install bash
 $ sudo bash -c 'if [[ $(grep -F /usr/local/bin/bash /etc/shells >& /dev/null; echo $?) -ne 0 ]]; then echo /usr/local/b
 in/bash >> /etc/shells; fi'
-$ sudo chsh -s /usr/local/bin/bash
+$ chsh -s /usr/local/bin/bash
 ~~~~
 
 # Install VIM config
