@@ -54,7 +54,7 @@ In external I put all my opam pin’d libraries
 
 # Generally useful Linux stuff and other tools
 ~~~~
-$ brew install fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
+$ brew install coreutils fzf gzip fswatch jq nmap ripgrep p7zip tcpdump wget tmux xz
 ~~~~
 
 # Install VIM config
