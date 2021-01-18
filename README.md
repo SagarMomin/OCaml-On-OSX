@@ -139,13 +139,13 @@ Some useful commands
 * ``[,,d] -> Show documentation for a function``
 * ``[,,s] -> Jump to source``
 * ``[,,i] -> Jump to interface``
-* ``[,a]  -> Toggle between ml/mli/intf``
+* ``[,a]   -> Toggle between ml/mli/intf``
 * ``[,,j] -> Show all instances of a function used, in a file``
-* ``[,c]  -> Copy line, or visual lines into your OSX clipboard``
-* ``[,o]  -> Ocamlformat file (should happen automatically on save)``
+* ``[,c]   -> Copy line, or visual lines into your OSX clipboard``
+* ``[,o]   -> Ocamlformat file (should happen automatically on save)``
 * ``[,w]  -> If you have two buffers open, diff them``
 * ``[,,w] -> disable buffer diff``
-* ``[,l]  -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]``
+* ``[,l]   -> Line diff. In visual mode: select lines to diff, [,l], select lines to diff against, [,l]``
 * ``[,,l] -> Reset line diff. You can use it when done inspecting diff, or after the first [,l] if you change your mind``
 * ``[,,<SPC>] -> Fzf all available keybindings``
 * ``[,<SPC>]  -> Fzf all available Vim commands/functions``
