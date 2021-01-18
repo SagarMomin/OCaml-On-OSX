@@ -94,7 +94,7 @@ $ ln -s ~/.vim/system-configs/rcfiles/sane-defaults/inputrc ~/.inputrc
 
 # Make bashrc load on terminal start
 ~~~~
-$ cat << EOM >> ~/.bash_profile
+$ cat << EOM > ~/.bash_profile
 source ~/.bashrc
 
 # opam configuration
